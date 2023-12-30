@@ -1005,7 +1005,7 @@
     // Function to construct the WhatsApp message and open the link
     function sendWhatsAppMessage() {
       var name = document.getElementById('name').value;
-      var email = document.getElementById('email').value;
+      var room = document.getElementById('room').value;
       var phone = document.getElementById('phone').value;
       var date = document.getElementById('date').value;
       var time = document.getElementById('time').value;
@@ -1013,7 +1013,7 @@
       var message = document.getElementById('message').value;
 
       // Construct the WhatsApp message with reservation information
-      var whatsappMessage = "Reservation%0A%0AName: " + name + "%0AEmail: " + email + "%0APhone: " + phone +
+      var whatsappMessage = "Reservation%0A%0AName: " + name + "%0ARoom: " + email + "%0APhone: " + phone +
         "%0ADate: " + date + "%0ATime: " + time + "%0APeople: " + people + "%0AMessage: " + message;
 
       // Create the WhatsApp link
