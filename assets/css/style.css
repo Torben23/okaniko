@@ -1150,11 +1150,7 @@ section {
   background: #d3af71;
 }
 
-.date-container {
-  position: relative;
-}
-
-.date-container h3 {
+.date-container label {
   position: absolute;
   top: 50%;
   left: 10px; /* Ajusta según sea necesario */
@@ -1164,10 +1160,9 @@ section {
   pointer-events: none; /* Evita que el texto interfiera con la interacción del campo de entrada */
 }
 
-/* Oculta el placeholder nativo del campo de fecha en la PC */
 @media (min-width: 768px) {
-  #date::before {
-    display: none !important;
+  .label-hide-desktop {
+    display: none;
   }
 }
 
