@@ -1150,6 +1150,20 @@ section {
   background: #d3af71;
 }
 
+.date-container {
+  position: relative;
+}
+
+.date-container h3 {
+  position: absolute;
+  top: 50%;
+  left: 10px; /* Ajusta según sea necesario */
+  transform: translateY(-50%);
+  margin: 0;
+  color: #999; /* Puedes ajustar el color según tu diseño */
+  pointer-events: none; /* Evita que el texto interfiera con la interacción del campo de entrada */
+}
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
