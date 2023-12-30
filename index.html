@@ -536,7 +536,7 @@
             <div class="validate"></div>
           </div>
           <div class="col-lg-4 col-md-6 form-group mt-3">
-            <input type="date" id="date" class="form-control" data-rule="minlen:4" data-msg="Please enter a valid date">
+            <input type="date" id="date" class="form-control" value="YYYY-MM-DD" data-rule="minlen:4" data-msg="Please enter a valid date">
             <div class="validate"></div>
           </div>
           <div class="col-lg-4 col-md-6 form-group mt-3">
@@ -1005,22 +1005,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <script>
-    var dateInput = document.getElementById('date');
-  
-    // Agrega el placeholder cuando el foco está fuera del campo de fecha
-    dateInput.addEventListener('blur', function() {
-      if (!dateInput.value) {
-        dateInput.setAttribute('placeholder', 'Date');
-      }
-    });
-  
-    // Elimina el placeholder cuando se hace clic en el campo de fecha
-    dateInput.addEventListener('focus', function() {
-      dateInput.removeAttribute('placeholder');
-    });
-  </script>
 
   <!-- Script para enviar mensaje por WhatsApp -->
   <script>
