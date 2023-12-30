@@ -1002,7 +1002,6 @@
 
   <!-- Script para enviar mensaje por WhatsApp -->
   <script>
-    // Function to construct the WhatsApp message and open the link
     function sendWhatsAppMessage() {
       var name = document.getElementById('name').value;
       var room = document.getElementById('room').value;
@@ -1012,19 +1011,20 @@
       var people = document.getElementById('people').value;
       var message = document.getElementById('message').value;
   
-      // Construct the WhatsApp message with reservation information
       var whatsappMessage = "Reservation%0A%0AName: " + name + "%0APhone: " + phone + "%0ARoom: " + room + 
         "%0ADate: " + date + "%0ATime: " + time + "%0APeople: " + people + "%0AMessage: " + message;
-  
-      // Create the WhatsApp link
+
       var whatsappLink = "https://wa.me/542216062309/?text=" + whatsappMessage;
   
-      // Open the link in a new window/tab
       window.open(whatsappLink, "_blank");
     }
   
-    // Add click event listener to the WhatsApp link
-    document.getElementById('whatsappLink').addEventListener('click', sendWhatsAppMessage);
+    document.getElementById('whatsappLink').addEventListener('click', function(event) {
+
+      event.preventDefault();
+  
+      sendWhatsAppMessage();
+    });
   </script>
 </body>
 
