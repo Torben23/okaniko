@@ -183,12 +183,18 @@ h6 {
   line-height: 1;
   font-weight: 300;
   letter-spacing: 1px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-family: "Poppins", sans-serif;
 }
 
 #header .logo a {
   color: #fff;
+}
+
+#header h1 a span.restaurant {
+  /*font-size: 20px; */
+  font-family: Poppins;
+  color: #cda45e;
 }
 
 #header .logo img {
@@ -203,7 +209,7 @@ h6 {
   border: 2px solid #cda45e;
   color: #fff;
   border-radius: 50px;
-  padding: 8px 25px;
+  padding: 8px 25px; 
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 500;
@@ -715,6 +721,7 @@ section {
   font-weight: 600;
   font-size: 26px;
   opacity: 1; 
+  margin-top: 5px;
 }
 
 .about .content ul {
@@ -947,7 +954,7 @@ section {
 # Events
 --------------------------------------------------------------*/
 .events {
-  background: url(../img/events-bg.jpg) center center no-repeat;
+  background: url(../img/events/events-bg.jpg) center center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -1040,15 +1047,15 @@ section {
 /*--------------------------------------------------------------
 # Book A Table
 --------------------------------------------------------------*/
-.book-a-table .php-email-form {
+.book-a-table {
   width: 100%;
 }
 
-.book-a-table .php-email-form .form-group {
+.book-a-table .form-group {
   padding-bottom: 8px;
 }
 
-.book-a-table .php-email-form .validate {
+.book-a-table .validate {
   display: none;
   color: red;
   margin: 0 0 15px 0;
@@ -1056,7 +1063,7 @@ section {
   font-size: 13px;
 }
 
-.book-a-table .php-email-form .error-message {
+.book-a-table .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1065,11 +1072,11 @@ section {
   font-weight: 600;
 }
 
-.book-a-table .php-email-form .error-message br+br {
+.book-a-table .error-message br+br {
   margin-top: 25px;
 }
 
-.book-a-table .php-email-form .sent-message {
+.book-a-table .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1078,13 +1085,13 @@ section {
   font-weight: 600;
 }
 
-.book-a-table .php-email-form .loading {
+.book-a-table .loading {
   display: none;
   text-align: center;
   padding: 15px;
 }
 
-.book-a-table .php-email-form .loading:before {
+.book-a-table .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1096,49 +1103,50 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.book-a-table .php-email-form input,
-.book-a-table .php-email-form textarea {
+.book-a-table input,
+.book-a-table textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   background: #0c0b09;
   border-color: #625b4b;
-  color: white;
-}
-
-.book-a-table .php-email-form input::-moz-placeholder,
-.book-a-table .php-email-form textarea::-moz-placeholder {
   color: #a49b89;
 }
 
-.book-a-table .php-email-form input::placeholder,
-.book-a-table .php-email-form textarea::placeholder {
+.book-a-table input::-moz-placeholder,
+.book-a-table textarea::-moz-placeholder {
   color: #a49b89;
 }
 
-.book-a-table .php-email-form input:focus,
-.book-a-table .php-email-form textarea:focus {
+.book-a-table input::placeholder,
+.book-a-table textarea::placeholder {
+  color: #a49b89;
+}
+
+.book-a-table input:focus,
+.book-a-table textarea:focus {
   border-color: #cda45e;
 }
 
-.book-a-table .php-email-form input {
+.book-a-table input {
   height: 44px;
 }
 
-.book-a-table .php-email-form textarea {
+.book-a-table textarea {
   padding: 10px 12px;
 }
 
-.book-a-table .php-email-form button[type=submit] {
+.book-a-table button[type=submit] {
   background: #cda45e;
   border: 0;
   padding: 10px 35px;
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
+  margin-top: 8px;
 }
 
-.book-a-table .php-email-form button[type=submit]:hover {
+.book-a-table button[type=submit]:hover {
   background: #d3af71;
 }
 
@@ -1361,108 +1369,16 @@ section {
 }
 
 .contact .info .open-hours,
-.contact .info .email,
 .contact .info .phone {
   margin-top: 40px;
 }
 
-.contact .php-email-form {
-  width: 100%;
+@media (max-width: 992px) {
+  .contact .info .email {
+    margin-top: 40px;
+  }
 }
 
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #cda45e;
-  border-top-color: #1a1814;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  background: #0c0b09;
-  border-color: #625b4b;
-  color: white;
-}
-
-.contact .php-email-form input::-moz-placeholder,
-.contact .php-email-form textarea::-moz-placeholder {
-  color: #a49b89;
-}
-
-.contact .php-email-form input::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: #a49b89;
-}
-
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
-  border-color: #cda45e;
-}
-
-.contact .php-email-form input {
-  height: 44px;
-}
-
-.contact .php-email-form textarea {
-  padding: 10px 12px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: #cda45e;
-  border: 0;
-  padding: 10px 35px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: #d3af71;
-}
 
 @keyframes animate-loading {
   0% {
