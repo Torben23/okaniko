@@ -1014,8 +1014,12 @@
   <script src="assets/js/main.js"></script>
 
   <script>
+    // Agrega un evento de escucha al campo de fecha
     document.getElementById('date').addEventListener('input', function() {
+      // Obtén el elemento h3
       var dateLabel = document.getElementById('dateLabel');
+  
+      // Oculta el elemento h3 cuando se elige una fecha
       if (this.value !== '') {
         dateLabel.style.display = 'none';
       } else {
