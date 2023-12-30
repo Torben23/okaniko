@@ -1158,18 +1158,11 @@ section {
   margin: 0;
   color: #999; /* Puedes ajustar el color según tu diseño */
   pointer-events: none; /* Evita que el texto interfiera con la interacción del campo de entrada */
+  display: none;
 }
 
-@media (min-width: 768px) {
-  .label-hide-desktop {
-    display: none;
-  }
-}
-
-@media (max-width: 767px) {
-  .label-hide-mobile {
-    display: none;
-  }
+.label-placeholder {
+  display: block;
 }
 
 /*--------------------------------------------------------------
