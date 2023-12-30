@@ -1164,6 +1164,13 @@ section {
   pointer-events: none; /* Evita que el texto interfiera con la interacción del campo de entrada */
 }
 
+/* Oculta el placeholder nativo del campo de fecha en la PC */
+@media (min-width: 768px) {
+  #date::before {
+    display: none !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/

@@ -542,7 +542,7 @@
           <div class="col-lg-4 col-md-6 form-group mt-3">
             <div class="date-container">
               <h3 id="dateLabel">Date</h3>
-              <input type="date" id="date" class="form-control" data-rule="minlen:4" data-msg="Please enter a valid date">
+              <input type="date" id="date" class="form-control" placeholder="Select a date" data-rule="minlen:4" data-msg="Please enter a valid date">
               <div class="validate"></div>
             </div>
           </div>          
@@ -1014,12 +1014,8 @@
   <script src="assets/js/main.js"></script>
 
   <script>
-    // Agrega un evento de escucha al campo de fecha
     document.getElementById('date').addEventListener('input', function() {
-      // Obtén el elemento h3
       var dateLabel = document.getElementById('dateLabel');
-  
-      // Oculta el elemento h3 cuando se elige una fecha
       if (this.value !== '') {
         dateLabel.style.display = 'none';
       } else {
