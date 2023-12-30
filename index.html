@@ -162,7 +162,7 @@
             <div class="box" data-aos="zoom-in" data-aos-delay="100">
               <span>Health</span>
               <h4>Care</h4>
-              <p>Desire to enrich the palates of both locals and foreigners by showcasing the incredible flavors that can be derived from plant-based ingredients without relying on meat or dairy.</p>
+              <p>Desire to enrich the palates of both locals and foreigners by showcasing the incredible flavors that can be derived from plant-based ingredients without relying on meat or dairy. As well to allow you a different food experience.</p>
             </div>
           </div>
 
@@ -170,7 +170,7 @@
             <div class="box" data-aos="zoom-in" data-aos-delay="200">
               <span>Community</span>
               <h4>Empowerment</h4>
-              <p>The restaurant proudly opens its doors to recent graduates from the cooking courses at the Training Center of Friends of Santa Cruz La Laguna (CECAP).</p>
+              <p>The restaurant proudly opens its doors to recent young Kak'chikel Mayan graduates from the cooking courses at the Training Center of Friends of Santa Cruz La Laguna (CECAP).</p>
             </div>
           </div>
 
@@ -178,7 +178,7 @@
             <div class="box" data-aos="zoom-in" data-aos-delay="300">
               <span>Environmental</span> 
               <h4>Sustainability</h4>
-              <p>By using locally sourced vegetables, the restaurant not only supports local farmers but also reduces its carbon footprint, contributing to a healthier planet.</p>
+              <p>By using locally sourced vegetables, the restaurant not only supports local farmers but also reduces its carbon footprint, contributing to a healthier planet. We also work hard to reduce our plastic production buying in bulks.</p>
             </div>
           </div>
 
@@ -310,20 +310,20 @@
 
         <div class="section-title">
           <h2>Specials</h2>
-          <p>Check Our Specials</p>
+          <p>Check Our Specials Diners</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-3">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Monday - Friday</a>
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Monday & Friday</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Tuesday - Saturday</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Tuesday & Saturday</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Wednesday - Sunday</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Wednesday & Sunday</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Thursday</a>
@@ -536,7 +536,7 @@
             <div class="validate"></div>
           </div>
           <div class="col-lg-4 col-md-6 form-group mt-3">
-            <input type="date" id="date" class="form-control" placeholder="Date" data-rule="minlen:4" data-msg="Please enter a valid date">
+            <input type="date" id="date" class="form-control" data-rule="minlen:4" data-msg="Please enter a valid date">
             <div class="validate"></div>
           </div>
           <div class="col-lg-4 col-md-6 form-group mt-3">
@@ -1008,6 +1008,22 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <script>
+    var dateInput = document.getElementById('date');
+  
+    // Agrega el placeholder cuando el foco está fuera del campo de fecha
+    dateInput.addEventListener('blur', function() {
+      if (!dateInput.value) {
+        dateInput.setAttribute('placeholder', 'Date');
+      }
+    });
+  
+    // Elimina el placeholder cuando se hace clic en el campo de fecha
+    dateInput.addEventListener('focus', function() {
+      dateInput.removeAttribute('placeholder');
+    });
+  </script>
+
   <!-- Script para enviar mensaje por WhatsApp -->
   <script>
     // Function to construct the WhatsApp message and open the link
@@ -1025,7 +1041,7 @@
         "%0ADate: " + date + "%0ATime: " + time + "%0APeople: " + people + "%0AMessage: " + message;
   
       // Create the WhatsApp link
-      var whatsappLink = "https://wa.me/542216062309/?text=" + whatsappMessage;
+      var whatsappLink = "https://wa.me/50254936161/?text=" + whatsappMessage;
   
       // Open the link in a new window/tab
       window.open(whatsappLink, "_blank");
