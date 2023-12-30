@@ -38,7 +38,8 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
 
 </head>
@@ -542,7 +543,7 @@
           <div class="col-lg-4 col-md-6 form-group mt-3">
             <input type="text" id="date" class="form-control" placeholder="Date" data-rule="minlen:4" data-msg="Please enter a valid date">
             <div class="validate"></div>
-          </div>
+          </div>        
           <div class="col-lg-4 col-md-6 form-group mt-3">
             <input type="text" id="time" class="form-control" list="timeOptions" placeholder="Time">
             <datalist id="timeOptions">
@@ -1012,7 +1013,10 @@
 
   <script>
     $(document).ready(function() {
-      $('#date').mask('00/00/0000', { placeholder: 'DD/MM/YYYY' });
+      $("#date").flatpickr({
+        dateFormat: "d/m/Y",
+        placeholder: "Date",
+      });
     });
   </script>
 
