@@ -552,7 +552,7 @@
         </div>
         <div class="text-center">
           <!-- Use a link to initiate WhatsApp message -->
-          <a href="#" id="whatsappLink" class="text-center"><button type="submit">Book a Table</button></a>
+          <a href="#book-a-table" id="whatsappLink" class="text-center"><button type="submit">Book a Table</button></a>
         </div>
 
       </div>
@@ -1011,22 +1011,21 @@
       var time = document.getElementById('time').value;
       var people = document.getElementById('people').value;
       var message = document.getElementById('message').value;
-
+  
       // Construct the WhatsApp message with reservation information
-      var whatsappMessage = "Reservation%0A%0AName: " + name + "%0ARoom: " + email + "%0APhone: " + phone +
+      var whatsappMessage = "Reservation%0A%0AName: " + "%0APhone: " + phone + "%0ARoom: " + room + 
         "%0ADate: " + date + "%0ATime: " + time + "%0APeople: " + people + "%0AMessage: " + message;
-
+  
       // Create the WhatsApp link
       var whatsappLink = "https://wa.me/542216062309/?text=" + whatsappMessage;
-
+  
       // Open the link in a new window/tab
       window.open(whatsappLink, "_blank");
     }
-
+  
     // Add click event listener to the WhatsApp link
     document.getElementById('whatsappLink').addEventListener('click', sendWhatsAppMessage);
   </script>
-
 </body>
 
 </html>
