@@ -536,11 +536,8 @@
             <div class="validate"></div>
           </div>
           <div class="col-lg-4 col-md-6 form-group mt-3">
-            <div class="date-container">
-              <button type="button" id="dateButton" class="date-button">Select Date</button>
-              <input type="date" id="date" class="form-control" style="display: none;" data-rule="minlen:4" data-msg="Please enter a valid date">
-              <div class="validate"></div>
-            </div>
+            <input type="date" id="date" class="form-control" data-rule="minlen:4" data-msg="Please enter a valid date">
+            <div class="validate"></div>
           </div>
           <div class="col-lg-4 col-md-6 form-group mt-3">
             <input type="text" id="time" class="form-control" list="timeOptions" placeholder="Time">
@@ -1007,17 +1004,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <script>
-    document.getElementById('dateButton').addEventListener('click', function() {
-      document.getElementById('date').click();
-    });
-  
-    document.getElementById('date').addEventListener('input', function() {
-      // Puedes agregar aquí cualquier lógica adicional después de seleccionar una fecha
-      console.log('Fecha seleccionada:', this.value);
-    });
-  </script>
 
   <!-- Script para enviar mensaje por WhatsApp -->
   <script>
