@@ -539,7 +539,7 @@
             <div class="validate"></div>
           </div>
           <div class="col-lg-4 col-md-6 form-group mt-3">
-            <input type="text" id="date" class="form-control" placeholder="Date" data-rule="minlen:4" data-msg="Please enter a valid date">
+            <input type="text" id="date" class="form-control" placeholder="DD/MM" data-rule="minlen:4" data-msg="Please enter a valid date">
             <div class="validate"></div>
           </div>
           <div class="col-lg-4 col-md-6 form-group mt-3">
@@ -1011,6 +1011,12 @@
   <script>
     $(document).ready(function() {
       $('#date').mask('00/00', { placeholder: 'DD/MM' });
+  
+      // Agregar evento para mostrar el calendario al hacer clic en el campo
+      $('#date').on('click', function() {
+        // Abre el calendario (la funcionalidad del calendario depende del navegador)
+        this.type = 'date';
+      });
     });
   </script>
 
