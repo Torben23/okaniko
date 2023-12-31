@@ -1150,6 +1150,10 @@ section {
   background: #d3af71;
 }
 
+.date-container {
+  position: relative;
+}
+
 .date-container label {
   position: absolute;
   top: 50%;
@@ -1158,10 +1162,13 @@ section {
   margin: 0;
   color: #999; /* Puedes ajustar el color según tu diseño */
   pointer-events: none; /* Evita que el texto interfiera con la interacción del campo de entrada */
+}
+
+#dateLabel {
   display: none;
 }
 
-.label-placeholder {
+#date:not(:focus) + #dateLabel {
   display: block;
 }
 
