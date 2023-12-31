@@ -1150,6 +1150,28 @@ section {
   background: #d3af71;
 }
 
+.date-container {
+  position: relative;
+}
+
+.date-button {
+  background: none;
+  border: none;
+  color: #007bff; /* Puedes ajustar el color según tu diseño */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
