@@ -269,4 +269,50 @@
     })
   });
 
+
+  // Calendario Verga
+  $(document).ready(function() {
+    // Configurar el selector de fecha
+    $("#datepicker").datepicker({
+      dateFormat: 'dd/mm/yy',
+      onSelect: function(dateText) {
+        // Al seleccionar una fecha, almacenarla en el campo oculto
+        $("#date").val(dateText);
+      }
+    });
+  });
+
+
+
+// Script para enviar mensaje por WhatsApp 
+
+  function sendWhatsAppMessage() {
+    var name = document.getElementById('name').value;
+    var room = document.getElementById('room').value;
+    var phone = document.getElementById('phone').value;
+    var date = document.getElementById('date').value;
+    var time = document.getElementById('time').value;
+    var people = document.getElementById('people').value;
+    var message = document.getElementById('message').value;
+
+    // Construct the WhatsApp message with reservation information
+    var whatsappMessage = "Reservation%0A%0AName: " + name + "%0APhone: " + phone + "%0ARoom: " + room + 
+      "%0ADate: " + date + "%0ATime: " + time + "%0APeople: " + people + "%0AMessage: " + message;
+
+    // Create the WhatsApp link
+    var whatsappLink = "https://wa.me/50254936161/?text=" + whatsappMessage;
+
+    // Open the link in a new window/tab
+    window.open(whatsappLink, "_blank");
+  }
+
+  // Add click event listener to the WhatsApp button
+  document.getElementById('whatsappLink').addEventListener('click', function(event) {
+    // Prevenir la acción por defecto del botón (enviar el formulario)
+    event.preventDefault();
+    // Llamar a la función para enviar el mensaje por WhatsApp
+    sendWhatsAppMessage();
+  });
+
+
 })()
