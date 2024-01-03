@@ -1154,13 +1154,12 @@ section {
   background: #d3af71;
 }
 
-@media (max-width: 992px) {
-  .book-a-table .phone {
-    margin-top: 0;
+@media (min-width: 992px) {
+  .book-a-table .form-group {
+    margin-top: 0 !important;
+    margin-bottom: 16px;
   }
 }
-
-
 
 /*--------------------------------------------------------------
 # Testimonials
