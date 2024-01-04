@@ -935,9 +935,9 @@ section {
   color: #fff;
 }
 
-.specials .details p {
+/*.specials .details p {
   color: #aaaaaa;
-}
+}*/
 
 .specials .details p:last-child {
   margin-bottom: 0;
@@ -945,6 +945,7 @@ section {
 
 .specials .sopa {
   font-size: 20px;
+  color: #cda45e;
 }
 
 @media (max-width: 992px) {
