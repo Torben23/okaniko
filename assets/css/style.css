@@ -953,7 +953,7 @@ section {
     border: 0;
     padding: 15px;
   }
-  .img-fluid  {
+  .specials .img-fluid  {
     max-width: 80%;
   }
 }
