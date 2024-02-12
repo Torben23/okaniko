@@ -296,8 +296,8 @@
     var message = document.getElementById('message').value;
 
     // Construct the WhatsApp message with reservation information
-    var whatsappMessage = "Reservation%0A%0AName: " + name + "%0APhone: " + phone + "%0ARoom: " + room + 
-      "%0ADate: " + date + "%0ATime: " + time + "%0APeople: " + people + "%0AMessage: " + message;
+    var whatsappMessage = "Reservación: " + "%0Nombre: " + name + "%0ACelular: " + phone + "%0AApart: " + room + 
+      "%0AFecha: " + date + "%0AComida: " + time + "%0APersonas: " + people + "%0APromo/Alergias: " + message;
 
     // Create the WhatsApp link
     var whatsappLink = "https://wa.me/50254936161/?text=" + whatsappMessage;

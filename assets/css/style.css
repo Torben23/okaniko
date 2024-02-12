@@ -1063,55 +1063,8 @@ section {
   padding-bottom: 8px;
 }
 
-.book-a-table .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.book-a-table .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.book-a-table .error-message br+br {
-  margin-top: 25px;
-}
-
-.book-a-table .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.book-a-table .loading {
-  display: none;
-  text-align: center;
-  padding: 15px;
-}
-
-.book-a-table .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #cda45e;
-  border-top-color: #1a1814;
-  animation: animate-loading 1s linear infinite;
-}
-
 .book-a-table input,
+.book-a-table select,
 .book-a-table textarea {
   border-radius: 0;
   box-shadow: none;
@@ -1136,13 +1089,30 @@ section {
   border-color: #cda45e;
 }
 
-.book-a-table input {
+.book-a-table input,
+.book-a-table select {
   height: 44px;
 }
 
 .book-a-table textarea {
   padding: 10px 12px;
 }
+
+/* Estilos para las opciones del select */
+#time option,
+#roomOptions option {
+  background: #0c0b09;
+  color: #a49b89;
+}
+
+/* Estilos para el hover del select (si es necesario) */
+#time:hover,
+#roomOptions option  {
+  background: #0c0b09;
+  border-color: #625b4b;
+  color: #a49b89;
+}
+
 
 .book-a-table button[type=submit] {
   background: #cda45e;
