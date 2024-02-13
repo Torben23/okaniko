@@ -288,7 +288,7 @@
 
   function sendWhatsAppMessage() {
     var name = document.getElementById('name').value;
-    var room = document.getElementById('room').value;
+    var room = document.getElementById('roomOptions').value;
     var phone = document.getElementById('phone').value;
     var date = document.getElementById('date').value;
     var time = document.getElementById('time').value;
