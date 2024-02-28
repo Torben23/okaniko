@@ -43,24 +43,28 @@ h6 {
 #preloader:before {
   content: "";
   position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #1a1814;
-  border-top-color: #cda45e;
-  border-bottom-color: #cda45e;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: animate-preloader 1s linear infinite;
+  top: calc(50% - 40px); /* Ajusta la posición vertical según el nuevo tamaño */
+  left: calc(50% - 40px); /* Ajusta la posición horizontal según el nuevo tamaño */
+  width: 80px; /* Nuevo ancho del icono */
+  height: 80px; /* Nuevo alto del icono */
+  background-image: url('https://okaniko.netlify.app/assets/img/favicon.png'); /* URL de tu icono */
+  background-size: contain; /* Ajusta el tamaño del icono para que quepa dentro del contenedor */
+  animation: animate-preloader 3s linear infinite;
+  transform-origin: center center;
 }
 
 @keyframes animate-preloader {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  #preloader:before {
+    top: calc(40% - 40px);
   }
 }
 
